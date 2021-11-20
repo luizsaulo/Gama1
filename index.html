@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Luiz Saulo Rolim de Sousa</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img src="logo.png" alt="Logotipo">
+        </div>
+        <ul>
+            <li>
+                <a target="_blank" href="https://github.com/luizsaulo">github</a>
+            </li>
+            <li>
+                <a target="_blank" href="mailto:saulo@saulo.com">e-mail</a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/85999999999">whatsapp</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Luiz Saulo</h1>
+                <h5>Front End Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()"  id="arrow">
+                <i id="animation" class="fas fa-sort-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Me chamo Saulo e sou desenvovledor full stack em formação. Estou em processo de capacitação e não costumo medir esforços para atingir
+                    meus objetivos. Farei o que for necessário para honrar meus compromissos e entregar os projetos em dia,
+                    cumprindo com todas as exigências e mantendo o padrão de excelência esperado.
+                </p>
+            </div>
+
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="seu melhor e-mail">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
